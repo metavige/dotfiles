@@ -25,8 +25,19 @@ brew tap josegonzalez/homebrew-php
 # Install everything else
 brew install ack
 brew install git
+brew install git-tf
 brew install rename
 brew install tree
+brew install hg
+
+# Install Java Env
+brew install maven
+brew install ant
+brew install groovy
+brew install gradle
+
+# Install Node
+brew install node
 
 # Remove outdated versions from the cellar
 brew cleanup
