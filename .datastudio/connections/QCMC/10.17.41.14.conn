@@ -1,0 +1,27 @@
+#
+#Tue Dec 10 17:07:08 CST 2013
+connection.schemainclusion=Cloud\nNebula\nNimbus
+property.ansinulldefaulton=true
+connection.includeallobjects=true
+connection.password=b9c866bb3838b46040b079e80bf822a4
+property.quotedidentifier=true
+property.ansinulls=true
+connection.objectexclusion=
+connection.servertype=Production
+connection.role=SQL Server Authentication
+connection.username=nebulaadmin
+connection.savepassword=true
+connection.driverproperties=
+property.ansipadding=true
+connection.sid=
+connection.objectinclusion=
+property.isolationlevel=[Default]
+connection.database=
+connection.schemaexclusion=
+connection.port=1433
+connection.rdbms=MSSQLSERVER7
+connection.charset=
+connection.includeallschemas=false
+property.ansiwarnings=true
+connection.host=10.17.41.14
+connection.scriptmount=
