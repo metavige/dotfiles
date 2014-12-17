@@ -1,2 +1,1 @@
-[ -n "$PS1" ] && source ~/.bash_profile
-export EDITOR=vim
+[ -n "$PS1" ] && source ~/.bash_profile;
