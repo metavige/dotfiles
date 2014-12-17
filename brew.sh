@@ -86,6 +86,14 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
+brew install git-tf
+
+# Install Java Env
+brew install maven
+brew install ant
+brew install groovy
+brew install gradle
+
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
