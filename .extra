@@ -3,14 +3,7 @@
 # for node.js run, add configuration
 ulimit -n 2048
 
-alias ll='ls -l'
-
 #export DOCKER_HOST=tcp://192.168.59.103:2375
-
-export DOCKER_HOST_IP=$(vagrant ssh-config | sed -n "s/[ ]*HostName[ ]*//gp")
-export DOCKER_HOST="tcp://${DOCKER_HOST_IP}:2375"
-
-export JAVA_HOME=$(/usr/libexec/java_home)
 
 GIT_AUTHOR_NAME="metavige"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
