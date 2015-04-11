@@ -3,8 +3,6 @@
 # for node.js run, add configuration
 ulimit -n 2048
 
-#export DOCKER_HOST=tcp://192.168.59.103:2375
-
 GIT_AUTHOR_NAME="metavige"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"

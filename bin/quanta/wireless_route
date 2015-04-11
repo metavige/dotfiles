@@ -1,0 +1,8 @@
+#!/bin/sh
+
+GATEWAY=`netstat -nr | grep 'default' | grep 'en0' | tr -s ' ' | cut -d ' ' -f2`
+echo $GATEWAY
+#GATEWAY=10.243.4.1
+
+#sh ~/bin/remove_route
+~/bin/change_route $GATEWAY

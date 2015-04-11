@@ -26,7 +26,7 @@
             "name": "PaaSRedis03",
             "cmd": "ssh root@192.168.0.146"
         },{
-            "name": "REDIS 測試",
+            "name": "REDIS/MQ 測試",
             "cmd": "ssh root@192.168.0.112"
         }]
     }, {

@@ -21,9 +21,7 @@ export MANPAGER="less -X";
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto";
 
-# export DOCKER HOST from Vagrant
-export DOCKER_HOST_IP=$(vagrant ssh-config | sed -n "s/[ ]*HostName[ ]*//gp")
-export DOCKER_HOST="tcp://${DOCKER_HOST_IP}:2375"
-
 # export JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+export PATH=/usr/local/sbin:$PATH

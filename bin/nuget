@@ -5,4 +5,4 @@
 # copy to /usr/local/bin and Robert is your father's brother....
 #
 PATH=/usr/local/bin:~/bin:$PATH
-mono --runtime=v4.0 NuGet.exe $*
+mono --runtime=v4.0 ~/bin/NuGet.exe $*

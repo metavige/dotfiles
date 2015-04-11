@@ -1,0 +1,11 @@
+#!/bin/sh
+
+sudo route delete -net 192.168.0.0
+sudo route delete -net 192.168.95.0
+sudo route delete -net 10.243.0.0
+sudo route delete -net 10.242.0.0
+sudo route delete -net 10.64.0.0
+sudo route delete -net 10.32.0.0
+sudo route delete -net 10.17.0.0
+#sudo route delete -net 10.0.0.0
+sudo route delete -net 172.20.0.0

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+GATEWAY=`netstat -nr | grep 'default' | grep 'en6' | tr -s ' ' | cut -d ' ' -f2`
+echo $GATEWAY
+#GATEWAY=10.243.0.1
+
+sudo ~/bin/change_route $GATEWAY
