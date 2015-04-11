@@ -98,5 +98,16 @@ brew install gradle
 # installation method.
 brew install node
 
+# Install Cask
+brew install caskroom/cask/brew-cask
+
+# Install Virtualbox from Cask
+brew cask install virtualbox
+brew cask install google-chrome
+brew cask install firefox
+brew cask install github
+brew cask install sourcetree
+brew cask install iterm2
+
 # Remove outdated versions from the cellar.
 brew cleanup

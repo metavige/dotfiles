@@ -1,6 +1,4 @@
-# Mathias’s dotfiles
-
-![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
+# metavige's dotfiles
 
 ## Installation
 
