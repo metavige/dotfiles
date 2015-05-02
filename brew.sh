@@ -73,6 +73,7 @@ brew install xz
 # install better console utils
 brew install tmux
 brew install mosh
+brew install reattach-to-user-namespace #fix iterm2 copy/paster bug
 
 # Install other useful binaries.
 brew install ack
