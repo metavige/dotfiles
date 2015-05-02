@@ -3,4 +3,4 @@ set -gx PATH /usr/local/bin ~/bin $PATH
 
 set fish_greeting
 
-eval (docker-machine env dev)
+docker-machine env dev | source 

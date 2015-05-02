@@ -40,6 +40,12 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
 brew install homebrew/php/php55 --with-gmp
 
+# Install shell
+brew install zsh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+brew install fish
+curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.sh | sh
+
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install bfg
 brew install binutils
@@ -63,6 +69,10 @@ brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
+
+# install better console utils
+brew install tmux
+brew install mosh
 
 # Install other useful binaries.
 brew install ack
@@ -110,4 +120,5 @@ brew cask install evernote
 brew cask install dash
 
 # Remove outdated versions from the cellar.
+brew cask cleanup
 brew cleanup
