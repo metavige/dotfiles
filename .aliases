@@ -150,5 +150,6 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # for docker
 
-alias docker-pid="sudo docker inspect --format '{{.State.Pid}}'"
-alias docker-ip="sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+alias docker-pid="docker inspect --format '{{.State.Pid}}'"
+alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+alias dr="docker run"

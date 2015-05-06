@@ -24,4 +24,4 @@ export GREP_OPTIONS="--color=auto";
 # export JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-export PATH=/usr/local/sbin:$PATH
+export SHELL="/bin/zsh"
