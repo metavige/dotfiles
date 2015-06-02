@@ -80,3 +80,13 @@ export SHELL="/bin/zsh"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+if [ -f ~/.path ]; then source ~/.path; fi
+if [ -f ~/.functions ]; then source ~/.functions; fi
+if [ -f ~/.aliases ]; then source ~/.aliases; fi
+if [ -f ~/.exports ]; then source ~/.exports; fi
+if [ -f ~/.extra ]; then source ~/.extra; fi
+if [ -f dnvm.sh ]; then source dnvm.sh; fi
+if [ -f ~/.bashrc_docker ]; then source ~/.bashrc_docker; fi
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/rickychiang/.gvm/bin/gvm-init.sh" ]] && source "/Users/rickychiang/.gvm/bin/gvm-init.sh"
