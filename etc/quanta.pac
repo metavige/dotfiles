@@ -5,9 +5,9 @@ function FindProxyForURL(url, host) {
 		return "DIRECT";
 	}
 	
-	//var quantaProxy = "PROXY http://99122010%40quanta:%212015_May%40@proxy";
-	var quantaProxy = "PROXY proxy:80; 192.168.0.107:6588";
+  // var quantaProxy = "PROXY http://99122010%40quanta:%212015_July%40@proxy";
 	var bypassProxy = "PROXY 192.168.0.107:6588";
+  var quantaProxy = "PROXY proxy:80";
 
 	var netMasks = [{
 		p: "192.168.0.0",
@@ -31,6 +31,11 @@ function FindProxyForURL(url, host) {
 		}
 	}
 
+  // for camp-test
+  if (url.indexOf("camp-test.quanta-camp.com") > 0) {
+    return quantaProxy;
+  }
+
 	// direct domains
 	var directDomains = [
 		".quanta.corp",
@@ -45,29 +50,39 @@ function FindProxyForURL(url, host) {
 
 	for (var i in directDomains) {
 		if (dnsDomainIs(host, directDomains[i])) {
-			return "DIRECT";
+      // return "DIRECT";
+      return quantaProxy;
 		}
 	}
 
+  if (url.substring(0, 6) == 'https:') {
+    // return "DIRECT";
+    // return bypassProxy;
+      return quantaProxy;
+  }
+    
 	// bypass to 107
 	var byPassDomains = [
 		".facebook.com",
 		".fbcdn.net",
 		".akamaihd.net",
-		"twitter.com",
+		".twitter.com",
 		".twimg.com",
 		".plurk.com",
-		"flipboard.com",
-		"github.com"
+		".flipboard.com",
+		".github.com",
+		".mobile01.com",
+		".xuite.net"
 	];
 
 	for (var i in byPassDomains) {
 		if (dnsDomainIs(host, byPassDomains[i])) {
-			return bypassProxy;
+      return bypassProxy;
 		}
 	}
 
-	// 除了以上的連線之外, 走公司的 Proxy 
-	return quantaProxy;
+  // 除了以上的連線之外, 走公司的 Proxy
+  // return bypassProxy;
+  return quantaProxy;
 
 }

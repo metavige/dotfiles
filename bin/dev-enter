@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DEV_MACHINE_STATUS=`docker-machine ls | grep dev | awk '{print $3}'`
+
+if [ $DEV_MACHINE_STATUS == "Stopped" ]; then
+  docker-machine start dev
+	sleep 1
+fi
+
+eval $(docker-machine env dev)
