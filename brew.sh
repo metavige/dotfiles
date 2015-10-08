@@ -45,6 +45,7 @@ brew install zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 brew install fish
 curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.sh | sh
+brew install zsh-syntax-highlighting
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install bfg
@@ -104,7 +105,7 @@ brew install gradle
 # installation method.
 brew install eode
 #brew install nvm
-#source $(brew --prefix nvm)/nvm.sh 
+#source $(brew --prefix nvm)/nvm.sh
 #nvm install node && nvm alias default node
 
 # Install Cask
