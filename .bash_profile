@@ -38,3 +38,9 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/rickychiang/.gvm/bin/gvm-init.sh" ]] && source "/Users/rickychiang/.gvm/bin/gvm-init.sh"
+
+# for node version control from nvm
+#source $(brew --prefix nvm)/nvm.sh

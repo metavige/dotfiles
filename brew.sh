@@ -102,7 +102,10 @@ brew install gradle
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
-brew install node
+brew install eode
+#brew install nvm
+#source $(brew --prefix nvm)/nvm.sh 
+#nvm install node && nvm alias default node
 
 # Install Cask
 brew install caskroom/cask/brew-cask
