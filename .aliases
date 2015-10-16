@@ -158,6 +158,7 @@ alias docker-pid="docker inspect --format '{{.State.Pid}}'"
 alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dr="docker run"
 
+alias tmuxa="tmux new-session -A -s main"
 
 # nodejs and iojs
 alias usenode='brew unlink iojs && brew link node && echo Updating NPM && npm install -g npm@latest && echo Using Node.js'
