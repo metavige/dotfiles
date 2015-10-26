@@ -5,7 +5,6 @@ function FindProxyForURL(url, host) {
 		return "DIRECT";
 	}
 	
-  // var quantaProxy = "PROXY http://99122010%40quanta:%212015_July%40@proxy";
 	var bypassProxy = "PROXY 192.168.0.107:6588";
   var quantaProxy = "PROXY proxy:80";
 
