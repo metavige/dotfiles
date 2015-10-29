@@ -80,8 +80,9 @@ alias undopush="git push -f origin HEAD^:master"
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
-# git push origin master
+# git fast command 
 alias gqp="git push origin master"
+alias gqc="git commit -a"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -154,8 +155,8 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # for docker
 
-alias docker-pid="docker inspect --format '{{.State.Pid}}'"
-alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+alias dpid="docker inspect --format '{{.State.Pid}}'"
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dr="docker run"
 
 alias tmuxa="tmux new-session -A -s main"
