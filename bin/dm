@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DM_NAME=$1
+
+if [ `docker-machine ls | grep $DM_NAME | grep Stopped | wc -l` -eq 1 ];
+then 
+	docker-machine start $1
+fi 
+	
+echo "Get docker-machine environment..... $DM_NAME"
+eval $(docker-machine env $DM_NAME)
