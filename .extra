@@ -11,9 +11,5 @@ GIT_AUTHOR_EMAIL="metavige@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 
-# for KVM (Change name to dnvm)
-# source kvm.sh
-source dnvm.sh
-
 # fix Mono 4.0.1 Bug https://github.com/aspnet/Home/issues/508
 export MONO_MANAGED_WATCHER=disabled
