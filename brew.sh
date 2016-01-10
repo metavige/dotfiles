@@ -43,8 +43,8 @@ brew install homebrew/php/php55 --with-gmp
 # Install shell
 brew install zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-brew install fish
-curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.sh | sh
+#brew install fish
+#curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.sh | sh
 brew install zsh-syntax-highlighting
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
@@ -58,7 +58,7 @@ brew install fcrackzip
 brew install foremost
 brew install hashpump
 brew install hydra
-brew install john
+#brew install john
 brew install knock
 brew install nmap
 brew install pngcheck
@@ -67,9 +67,9 @@ brew install sqlmap
 brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
+#brew install ucspi-tcp # `tcpserver` etc.
+#brew install xpdf
+#brew install xz
 
 # install better console utils
 brew install tmux
@@ -103,7 +103,7 @@ brew install gradle
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
-brew install eode
+brew install node
 #brew install nvm
 #source $(brew --prefix nvm)/nvm.sh
 #nvm install node && nvm alias default node
@@ -115,7 +115,7 @@ brew install caskroom/cask/brew-cask
 brew cask install virtualbox
 brew cask install google-chrome
 brew cask install firefox
-brew cask install github
+#brew cask install github
 brew cask install sourcetree
 brew cask install iterm2
 brew cask install dropbox
@@ -124,6 +124,22 @@ brew cask install wallpaper-wizard
 brew cask install evernote
 brew cask install dash
 
+brew tap ravenac95/sudolikeaboss
+brew install sudolikeaboss
+brew install sudolikeaboss-workaround
+
+# install and setup dnsmasq
+brew install dnsmasq
+mkdir -pv $(brew --prefix)/etc/
+echo 'address=/.dev/127.0.0.1' > $(brew --prefix)/etc/dnsmasq.conf
+echo "resolv-file=$(brew --prefix)/etc/resolv.dnsmasq.conf" >> $(brew --prefix)/etc/dnsmasq.conf
+sudo cp -v $(brew --prefix dnsmasq)/homebrew.mxcl.dnsmasq.plist /Library/LaunchDaemons
+sudo launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
+sudo mkdir -v /etc/resolver
+sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/dev'
+
 # Remove outdated versions from the cellar.
 brew cask cleanup
 brew cleanup
+
+
