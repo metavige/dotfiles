@@ -46,7 +46,7 @@ ZSH_THEME="metavige-agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git gitignore autojump jira tmux command-not-found zsh-syntax-highlighting)
+plugins=(git gitignore autojump tmux command-not-found zsh-syntax-highlighting brew common-aliases gradle httpie jsontools node npm vagrant)
 
 # User configuration
 
@@ -88,6 +88,7 @@ if [ -f ~/.exports ]; then source ~/.exports; fi
 if [ -f ~/.extra ]; then source ~/.extra; fi
 if [ -f dnvm.sh ]; then source dnvm.sh; fi
 if [ -f ~/.bashrc_docker ]; then source ~/.bashrc_docker; fi
+if [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh; fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/rickychiang/.gvm/bin/gvm-init.sh" ]] && source "/Users/rickychiang/.gvm/bin/gvm-init.sh"
+if [ -f ~/.gvm/bin/gvm-init.sh ]; then source ~/.gvm/bin/gvm-init.sh; fi
