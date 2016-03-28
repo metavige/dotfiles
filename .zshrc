@@ -46,7 +46,7 @@ ZSH_THEME="metavige-agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitignore autojump tmux command-not-found zsh-syntax-highlighting brew common-aliases gradle httpie jsontools node npm vagrant)
+plugins=(git gitignore autojump tmux command-not-found zsh-syntax-highlighting brew common-aliases gradle httpie jsontools node npm vagrant docker docker-compose redis-cli)
 
 # User configuration
 
@@ -86,7 +86,7 @@ if [ -f ~/.functions ]; then source ~/.functions; fi
 if [ -f ~/.aliases ]; then source ~/.aliases; fi
 if [ -f ~/.exports ]; then source ~/.exports; fi
 if [ -f ~/.extra ]; then source ~/.extra; fi
-if [ -f dnvm.sh ]; then source dnvm.sh; fi
+if [ -f ~/.dnx/dnvm/dnvm.sh ]; then source ~/.dnx/dnvm/dnvm.sh; fi
 if [ -f ~/.bashrc_docker ]; then source ~/.bashrc_docker; fi
 if [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh; fi
 
