@@ -27,7 +27,7 @@ alias gpr="~/code/gpr $1"
 
 alias st="open -a 'Sublime Text'"
 alias mate="open -a 'TextMate'"
-
+alias t="tree"
 # general shortcuts
 # alias pro="cd ~/projects"
 alias gowork="cd ~/workspace"

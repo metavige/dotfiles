@@ -14,6 +14,9 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# install mackup - for MAC application settings in sync
+brew install mackup
+
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -48,32 +51,32 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 brew install zsh-syntax-highlighting
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
+# brew install bfg
+# brew install binutils
+# brew install binwalk
+# brew install cifer
+# brew install dex2jar
+# brew install dns2tcp
+# brew install fcrackzip
+# brew install foremost
+# brew install hashpump
+# brew install hydra
 #brew install john
-brew install knock
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
+# brew install knock
+# brew install nmap
+# brew install pngcheck
+# brew install socat
+# brew install sqlmap
+# brew install tcpflow
+# brew install tcpreplay
+# brew install tcptrace
 #brew install ucspi-tcp # `tcpserver` etc.
 #brew install xpdf
 #brew install xz
 
 # install better console utils
 brew install tmux
-brew install mosh
+# brew install mosh
 brew install reattach-to-user-namespace #fix iterm2 copy/paster bug
 
 # Install other useful binaries.
@@ -89,8 +92,8 @@ brew install pv
 brew install rename
 brew install rhino
 brew install tree
-brew install webkit2png
-brew install zopfli
+# brew install webkit2png
+# brew install zopfli
 brew install openssl
 
 brew install git-tf
